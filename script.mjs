@@ -20,7 +20,7 @@ renderer.setClearColor(0x001466, 1);
 // Append the renderer canvas into <body>
 document.body.appendChild(renderer.domElement);
 
-const texture = new THREE.TextureLoader().load('/textures/troll.png' ); 
+const texture = new THREE.TextureLoader().load('/trollface.png' ); 
 
 const geometry = new THREE.SphereGeometry( 1, 32, 16 );
 
@@ -30,12 +30,13 @@ const sphere = new THREE.Mesh( geometry, material );
 
 scene.add( sphere );
 
-camera.position.z = 8
+camera.position.z = 5
 
 function render() {
 	renderer.render(scene, camera);
         // sphere.rotation.x += 0.05;
         sphere.rotation.y -= 0.05;
+	sphere.rotation.x -=0.5
 	requestAnimationFrame(render);
 }
 
