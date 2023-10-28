@@ -35,7 +35,7 @@ camera.position.z = 5
 function render() {
 	renderer.render(scene, camera);
         // sphere.rotation.x += 0.05;
-        sphere.rotation.y -= 0.05;
+        sphere.rotation.y += 0.05;
 	//sphere.rotation.x -= 0.005
 	requestAnimationFrame(render);
 }
