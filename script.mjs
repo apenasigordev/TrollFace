@@ -20,7 +20,7 @@ renderer.setClearColor(0x001466, 1);
 // Append the renderer canvas into <body>
 document.body.appendChild(renderer.domElement);
 
-const texture = new THREE.TextureLoader().load('/trollface.png' ); 
+const texture = new THREE.TextureLoader().load('./trollface.png' ); 
 
 const geometry = new THREE.SphereGeometry( 1, 32, 16 );
 
